@@ -29,27 +29,28 @@ body {
 
 #left-side > p {
 	color: #BAC1DA;
+	margin-right: 5px;
 }
 
-#about-section > p {
-	margin-right: 7px;
+#about-section  {
+	margin-right: 5px;
+	margin-left: 7px;
 }
 
 .left-section {
 	list-style-type: none;
 	margin-bottom: 10px;
+	margin-right: 7px;
 	color: #E1E5F3;
 	font-size: 18px;
 	text-decoration: none;
-	list-style-type: none;
-	margin-bottom: 10px;
 }
 
 
 
 #skills-section {
 	list-style-type: "#";
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 #photo {
@@ -63,15 +64,16 @@ body {
 
 /* Changes color of the icon while pointing to it: */
 i:hover {
-	color: #AEC6CF;
+	color: #00FFFF;
 	transition: 0.4s;
 	cursor: pointer;
 }
 
 /* Adds a github link to the icon: */
-a:link, i {
+#contact-section > a:link, i {
 	color: grey;
 }
+
 
 /* Adds space between icons */
 #contact-section > a i { 
@@ -79,15 +81,33 @@ a:link, i {
 	padding-right: 5px; 
 }
 
+/*Changes color of the icon while pointing to it on the right side: */
 .right-sections > h2 {
 	border-bottom: 0.5px solid gray;
 	position: sticky;
 	top: 0px;	
 	margin-right: 10px;
+	color: white;
+}
+
+.right-sections > h2:hover{
 	color: #00FFFF;
+	transition: 0.4s;
+	cursor: pointer;
 }
 
 
+#left-side > h3 {
+	top: 0px;	
+	margin-right: 10px;
+	color: white;
+}
+
+#left-side > h3:hover{
+	color: #00FFFF;
+	transition: 0.4s;
+	cursor: pointer;
+}
 
 #footer-div {
 	background-color: gray;
@@ -115,7 +135,7 @@ nav > ul li:hover {
 
 
 /* Underline nav section when hovering:*/
-/*
+
 nav > ul li {
 	list-style: none;
 	margin: 0;
@@ -136,11 +156,13 @@ nav > ul li::after {
 nav > ul li:hover::after {
 	width: 100%;
 	transition: all 250ms;
+	
 }
-*/
+
 
 
 /*Gradient underline while hover on nav elements*/
+/*
 nav > ul {
 	margin: 10px auto 0;
 	list-style: none;
@@ -153,7 +175,7 @@ nav > ul {
 }
 
 @media screen and (min-width: 600px) {
-		section > ul {
+		nav > ul li {
 				flex-direction: column;
 		}
 }
@@ -191,7 +213,7 @@ nav > ul li::after {
 	width: 0;
 }
 
-
+*/
 
 /*highlight nav section when hovering */
 /*
@@ -205,5 +227,11 @@ nav > ul li::before {
 	transform: skew(-12deg) translateX(-50%);
 	background: rgba(238,111,87,0.5);
 	z-index: -1;
+}
+
+a:hover {
+	color: #AEC6CF;
+	transition: 0.4s;
+	cursor: pointer;
 }
 */
